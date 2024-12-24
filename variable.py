@@ -1,5 +1,4 @@
 #kick off
-
 name = 'Ark'
 age = 21
 isStudent = True
@@ -29,7 +28,6 @@ print(type(salary)) # int
 
 
 # string + integer operation
-
 # print(first_name + " " + salary) [This won't work!]
 print(first_name + str(salary)) # gotta convert it to string
 
@@ -45,4 +43,23 @@ print('Your height is: ' + str(height)) # notice it's converted to str()
 human = False
 print(type(human)) # bool
 print("Are you a human: " + str(human))
+
+
+
+# multiple assignment 
+name, age, attractive = 'Mark', 28, False
+
+print(name) # It updated the last assigned value : Mark not "Ark"
+print(age)
+print(attractive)
+
+# spongebob = 30
+# patrick = 30          (we can write this in one line of code)
+# sandy = 30
+
+spongebob = patrick = sandy = 30
+
+print(spongebob)
+print(patrick)
+print(sandy)
 
